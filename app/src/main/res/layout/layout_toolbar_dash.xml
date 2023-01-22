@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/snowMint"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home"
+            style="@style/ImageView_icon"
+            android:padding="@dimen/space5"
+            app:srcCompat="@drawable/ic_launcher_foreground"/>
+        <SearchView
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="wrap_content"
+            android:queryHint="@string/app_name"
+            android:searchIcon="@drawable/ic_launcher_foreground"
+            android:backgroundTint="@color/snowMint"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/menu"
+            style="@style/ImageView_icon"
+            android:padding="@dimen/space10"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_launcher_foreground"/>
+    </LinearLayout>
+</layout>
